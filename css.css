@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+  --Bright_orange: hsl(31, 77%, 52%);
+  --Dark_cyan: hsl(184, 100%, 22%);
+  --Very_dark_cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+  --Transparent_white_paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very_light_gray: hsl(0, 0%, 95%);
+
+  --BSD: 'Big Shoulders Display', sans-serif;
+  --Lexend: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background-color: var(--Very_light_gray);
+  font-size: 15px;
+  display: flex;
+  min-height: 100vh;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+  /* Medidas */
+  width: 67.4%;
+  /* height: 500px; */
+  /* background-color: rgb(203, 193, 212); */
+  border-radius: 0.5rem;
+  /* border: 1px solid darkcyan; */
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.container .part {
+  padding: 3rem 3rem;
+  width: 33.33%;
+}
+
+.container .part img{
+    margin-bottom: 2rem;
+}
+
+.container .part h2{
+    font-family: var(--BSD);
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--Very_light_gray);
+    margin-bottom: 1.5rem;
+}
+
+.container .part p.inf{
+    font-family: var(--Lexend);
+    color: var(--Transparent_white_paragraphs);
+    line-height: 1.6rem;
+    margin-bottom: 5.2rem;
+}
+
+.container .part p.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: .9rem 2rem;
+    background-color: var(--Very_light_gray);
+    border-radius: 4rem;
+    font-family: var(--Lexend);
+    cursor: pointer;
+}
+
+.container .org {
+  /* flex-grow: 1; */
+  background-color: var(--Bright_orange);
+  color: var(--Bright_orange);
+}
+
+
+.container .cya {
+  /* flex-grow: 2; */
+  background-color: var(--Dark_cyan);
+  color: var(--Dark_cyan);
+}
+
+
+.container .dcy {
+  /* flex-grow: 1; */
+  background-color: var(--Very_dark_cyan);
+  color: var(--Very_dark_cyan);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1081px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 87%;
+    margin: 5rem auto;
+  }
+
+  .container .part {
+    padding: 3rem 3rem;
+    width: auto;
+    height: auto;
+  }
+
+  .container .part p.inf{
+    line-height: 1.6rem;
+    margin-bottom: 1.4rem;
+}
+}
