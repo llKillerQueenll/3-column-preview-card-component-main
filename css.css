@@ -36,12 +36,8 @@ main{
 }
 
 .container {
-  /* Medidas */
   width: 67.4%;
-  /* height: 500px; */
-  /* background-color: rgb(203, 193, 212); */
   border-radius: 0.5rem;
-  /* border: 1px solid darkcyan; */
   display: flex;
   overflow: hidden;
   margin: 0 auto;
@@ -75,29 +71,33 @@ main{
 .container .part p.btn{
     text-decoration: none;
     display: inline-block;
-    padding: .9rem 2rem;
+    padding: 14px 30px;
     background-color: var(--Very_light_gray);
     border-radius: 4rem;
     font-family: var(--Lexend);
     cursor: pointer;
+    border: 2px solid var(--Very_light_gray);
+}
+
+.container .part p.btn:hover{
+  color: var(--Very_light_gray);
+  background-color: transparent;
+  transition: .2s ease-in;
 }
 
 .container .org {
-  /* flex-grow: 1; */
   background-color: var(--Bright_orange);
   color: var(--Bright_orange);
 }
 
 
 .container .cya {
-  /* flex-grow: 2; */
   background-color: var(--Dark_cyan);
   color: var(--Dark_cyan);
 }
 
 
 .container .dcy {
-  /* flex-grow: 1; */
   background-color: var(--Very_dark_cyan);
   color: var(--Very_dark_cyan);
 }
